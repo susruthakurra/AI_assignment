@@ -25,6 +25,7 @@ Working :
 
 Architecture Flow :
 User -> Web Interface -> CAPTCHA Generator -> Distortion Engine -> CAPTCHA Challenge (Image / Puzzle) -> User Response -> Verification System-> Decision Layer (Access granted if response is correct)
+
 The dynamic CAPTCHA generation layer improves security by ensuring each challenge is unique.
 By introducing distortions and randomization, the system prevents automated bots from easily solving the CAPTCHA
 while still keeping it understandable for human users.
