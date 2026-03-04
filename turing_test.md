@@ -21,19 +21,7 @@ Working :
 5. If the AI cannot be reliably distinguished from the human, it is considered to have passed the Turing Test.
 
 Architecture Flow :
-Human Judge
-↓
-Communication Interface
-↓
-Adaptive Question Manager
-↓
-Response Analyzer
-↓
-Response Sources
-* Human Participant
-* AI Agent
-↓
-Decision Layer (Judge determines if the system behaves like a human)
+Human Judge -> Communication Interface -> Adaptive Question Manager -> Response Analyzer -> Response Sources (Human Participant & AI Agent) -> Decision Layer (Judge determines if the system behaves like a human)
 
 The adaptive layer makes the test more robust because it prevents AI systems from relying on scripted answers.
 By dynamically changing the questioning strategy, the system better evaluates reasoning ability, 
