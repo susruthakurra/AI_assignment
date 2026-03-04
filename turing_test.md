@@ -1,6 +1,6 @@
 ## Turing Test Architecture
 
-Idea :
+Idea :`
 Instead of a static Turing Test where the judge asks random questions, this architecture 
 introduces an adaptive questioning layer. The system analyzes the responses and dynamically changes the difficulty, 
 topic, and style of questions to better detect whether the participant is human or machine.
