@@ -6,6 +6,6 @@
 
 void initializeGrid(int grid[ROW][COL]);
 void printGrid(int grid[ROW][COL]);
-void updateObstacles(int grid[ROW][COL]);
+void addDynamicObstacle(int grid[ROW][COL]);
 
 #endif
