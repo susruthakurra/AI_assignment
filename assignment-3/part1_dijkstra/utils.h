@@ -3,6 +3,6 @@
 
 #define MAX 100
 
-void dijkstra(int graph[MAX][MAX], int n, int start);
+void dijkstra(int graph[MAX][MAX], int n, int start, char cities[MAX][50]);
 
 #endif
