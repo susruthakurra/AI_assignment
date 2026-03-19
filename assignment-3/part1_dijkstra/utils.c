@@ -1,5 +1,6 @@
 #include <stdio.h>
 #include <limits.h>
+#include <string.h>
 #include "utils.h"
 
 int minDistance(int dist[], int visited[], int n) {
@@ -14,12 +15,22 @@ int minDistance(int dist[], int visited[], int n) {
     return min_index;
 }
 
-void dijkstra(int graph[MAX][MAX], int n, int start) {
-    int dist[MAX], visited[MAX];
+void printPath(int parent[], int j, char cities[MAX][50]) {
+    if (parent[j] == -1) {
+        printf("%s ", cities[j]);
+        return;
+    }
+    printPath(parent, parent[j], cities);
+    printf("-> %s ", cities[j]);
+}
+
+void dijkstra(int graph[MAX][MAX], int n, int start, char cities[MAX][50]) {
+    int dist[MAX], visited[MAX], parent[MAX];
 
     for (int i = 0; i < n; i++) {
         dist[i] = INT_MAX;
         visited[i] = 0;
+        parent[i] = -1;
     }
 
     dist[start] = 0;
@@ -34,12 +45,16 @@ void dijkstra(int graph[MAX][MAX], int n, int start) {
                 dist[u] + graph[u][v] < dist[v]) {
 
                 dist[v] = dist[u] + graph[u][v];
+                parent[v] = u;
             }
         }
     }
 
-    printf("Vertex \t Distance from Source\n");
+    printf("\nShortest Paths:\n");
     for (int i = 0; i < n; i++) {
-        printf("%d \t %d\n", i, dist[i]);
+        printf("\n%s → %s\nDistance: %d\nPath: ",
+               cities[start], cities[i], dist[i]);
+        printPath(parent, i, cities);
+        printf("\n");
     }
 }
