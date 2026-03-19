@@ -20,7 +20,7 @@ void printGrid(int grid[ROW][COL]) {
     }
 }
 
-void updateObstacles(int grid[ROW][COL]) {
+void addDynamicObstacle(int grid[ROW][COL]) {
     int x = rand() % ROW;
     int y = rand() % COL;
     grid[x][y] = 1;
