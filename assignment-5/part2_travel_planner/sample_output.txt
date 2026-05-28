@@ -1,0 +1,11 @@
+AI Based Travel Planner
+
+Enter your budget: 12000
+Enter preferred travel type: Beach
+
+Recommended Destinations:
+
+City: Goa
+Budget: 12000
+Tourist Places: Baga Beach, Fort Aguada
+Food Recommendations: Seafood, Bebinca
