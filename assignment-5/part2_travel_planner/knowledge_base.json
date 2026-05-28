@@ -1,0 +1,29 @@
+{
+  "Hyderabad": {
+    "budget": 5000,
+    "food": ["Biryani", "Haleem"],
+    "places": ["Charminar", "Golconda Fort"],
+    "type": "Historical"
+  },
+
+  "Goa": {
+    "budget": 12000,
+    "food": ["Seafood", "Bebinca"],
+    "places": ["Baga Beach", "Fort Aguada"],
+    "type": "Beach"
+  },
+
+  "Manali": {
+    "budget": 15000,
+    "food": ["Siddu", "Trout Fish"],
+    "places": ["Solang Valley", "Rohtang Pass"],
+    "type": "Hill Station"
+  },
+
+  "Jaipur": {
+    "budget": 10000,
+    "food": ["Dal Baati Churma", "Ghewar"],
+    "places": ["Hawa Mahal", "Amber Fort"],
+    "type": "Cultural"
+  }
+}
